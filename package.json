@@ -1,8 +1,8 @@
 {
-    "name": "react-intensive-boilerplate",
+    "name": "facebook-wall",
     "version": "1.0.24",
-    "author": "Dima Vakatsiienko <d.vakatsiienko@lectrum.io>",
-    "private": true,
+    "author": "Nikita",
+    "private": false,
     "scripts": {
         "start": "nodemon",
         "build:config": "webpack --config=\"./webpack/webpack.config.babel.js\" --env production --display-reasons",
