@@ -1,11 +1,9 @@
 // Core
-import React, {
-    Component
-} from 'react';
+import React, { Component } from 'react';
 import Feed from "../../components/Feed/";
 import { hot } from 'react-hot-loader';
 import avatar from '../../theme/assets/lisa.png';
-
+import { Provider } from "../../components/HOC/withProfile";
 
 const options = {
     avatar,
@@ -17,9 +15,9 @@ const options = {
 export default class App extends Component {
     render () {
         return (
-            <>
-                <Feed { ...options } />
-            </>
+            <Provider value = { options }>
+                <Feed />
+            </Provider>
         );
     }
 }
