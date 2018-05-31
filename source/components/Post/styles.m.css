@@ -46,15 +46,14 @@
         font-size: 14px;
     }
 
-    .cross {
+    & .cross {
         content: '';
         position: absolute;
         top: 12px;
         right: 12px;
         width: 10px;
         height: 10px;
-        background-image: url('../../theme/assets/cross.png');
-        background-repeat: no-repeat;
+        background: url('../../theme/assets/cross.png') no-repeat;
         cursor: pointer;
 
         &:hover {
